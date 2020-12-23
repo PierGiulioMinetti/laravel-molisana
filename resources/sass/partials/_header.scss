@@ -1,0 +1,18 @@
+header{
+    display: flex;
+    align-items: center;
+
+    a img{
+        margin: 30px;
+    }
+
+    ul {
+        display: flex;
+        margin-left: 30px;
+
+        li{
+            list-style: none;
+            padding: 10px;
+        }
+    }
+}

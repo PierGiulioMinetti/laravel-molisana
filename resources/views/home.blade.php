@@ -2,37 +2,49 @@
 
 @section('content')
 
-   <section class="type-section container">
+<section >
        <h2>LE LUNGHE</h2>
-       @foreach ($lunghe as $card)
-            <div class="card">
-                <h3> {{ $card['titolo'] }} </h3>
-                <img src=" {{ $card['src'] }}" >
-                <a href=""> Vedi prodotto</a>
+       <div class="type-section container">
+           @foreach ($lunghe as $card)
+           <div class="card">
+               <h3> {{ $card['titolo'] }} </h3>
+               <h4>{{ $card['id'] }}</h4>
+               <img src=" {{ $card['src'] }}" >
+               <a href=""> Vedi prodotto</a>
             </div>
-       @endforeach
+            @endforeach
+        </div>
    </section>
 
-   <section class="type-section container">
-    <h2>LE CORTE</h2>
-    @foreach ($corte as $card)
-         <div class="card">
-             <img src=" {{ $card['src'] }}" >
-             <h3> {{ $card['titolo'] }} </h3>
-             <a href=""> Vedi prodotto</a>
-         </div>
-    @endforeach
+   <section >
+       <h2>LE CORTE</h2>
+       <div class="type-section container">
+
+           @foreach ($corte as $card)
+                <div class="card">
+                    <img src=" {{ $card['src'] }}" >
+                    <h3> {{ $card['titolo'] }} </h3>
+                    <h4>{{ $card['id'] }}</h4>
+                    <a href=""> Vedi prodotto</a>
+                </div>
+            @endforeach
+        </div> 
 </section>
 
-<section class="type-section container">
-    <h2>LE CORTE</h2>
-    @foreach ($cortissime as $card)
-         <div class="card">
-             <img src=" {{ $card['src'] }}" >
-             <h3> {{ $card['titolo'] }} </h3>
-             <a href=""> Vedi prodotto</a>
-         </div>
-    @endforeach
+<section >
+    <h2>LE CORTISSIME</h2>
+    <div class="type-section container">
+
+        @foreach ($cortissime as $card)
+            <div class="card">
+                <img src=" {{ $card['src'] }}" >
+                <h3> {{ $card['titolo'] }} </h3>
+
+                <h4>{{ $card['id'] }}</h4>
+                <a href=""> Vedi prodotto</a>
+            </div>
+        @endforeach
+    </div>
 </section>
 
 

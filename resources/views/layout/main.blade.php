@@ -9,9 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-       <header>
-           <img src="{{ asset('img/logo.png')}}" alt="">
-       </header>
+
+        @include('partials/header')
 
        <main>
             @yield('content')
