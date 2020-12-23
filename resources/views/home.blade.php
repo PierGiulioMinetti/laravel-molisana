@@ -10,7 +10,7 @@
                <h3> {{ $card['titolo'] }} </h3>
                <h4>{{ $card['id'] }}</h4>
                <img src=" {{ $card['src'] }}" >
-               <a href=""> Vedi prodotto</a>
+               <a href="{{ route('product', $card['id']) }}"> Vedi prodotto</a>
             </div>
             @endforeach
         </div>
@@ -25,7 +25,7 @@
                     <img src=" {{ $card['src'] }}" >
                     <h3> {{ $card['titolo'] }} </h3>
                     <h4>{{ $card['id'] }}</h4>
-                    <a href=""> Vedi prodotto</a>
+                    <a href="{{ route('product', $card['id']) }}"> Vedi prodotto</a>
                 </div>
             @endforeach
         </div> 
@@ -41,7 +41,7 @@
                 <h3> {{ $card['titolo'] }} </h3>
 
                 <h4>{{ $card['id'] }}</h4>
-                <a href=""> Vedi prodotto</a>
+                <a href="{{ route('product', $card['id']) }}"> Vedi prodotto</a>
             </div>
         @endforeach
     </div>
